@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TimeSegmentHalfHourCollectionViewCell" id="De5-BZ-w3Q" userLabel="TimeSegmentHalfHourCollectionViewCell" customClass="TimeSegmentHalfHourCollectionViewCell" customModule="GameGether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="79" height="243"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="79" height="243"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcW-id-i7B">
+                        <rect key="frame" x="0.0" y="211" width="79" height="32"/>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bF-4o-4oJ">
+                        <rect key="frame" x="0.0" y="211" width="79" height="2"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="xg6-Zh-bCS"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abV-1x-T8H">
+                        <rect key="frame" x="39" y="222" width="1" height="10"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="8MF-kU-h8H"/>
+                            <constraint firstAttribute="height" constant="10" id="uv3-iL-gmv"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Yy-zB-rZl">
+                        <rect key="frame" x="0.0" y="241" width="79" height="2"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="tGM-Je-Ao6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7bF-4o-4oJ" firstAttribute="leading" secondItem="De5-BZ-w3Q" secondAttribute="leading" id="02a-Zz-HYa"/>
+                <constraint firstItem="DcW-id-i7B" firstAttribute="top" secondItem="7bF-4o-4oJ" secondAttribute="top" id="7QY-qx-NFc"/>
+                <constraint firstAttribute="trailing" secondItem="7Yy-zB-rZl" secondAttribute="trailing" id="HLW-ch-zhh"/>
+                <constraint firstAttribute="trailing" secondItem="7bF-4o-4oJ" secondAttribute="trailing" id="JOR-rq-adC"/>
+                <constraint firstItem="DcW-id-i7B" firstAttribute="bottom" secondItem="7Yy-zB-rZl" secondAttribute="bottom" id="M15-9v-Z17"/>
+                <constraint firstAttribute="bottom" secondItem="7Yy-zB-rZl" secondAttribute="bottom" id="TUL-o9-4qa"/>
+                <constraint firstItem="abV-1x-T8H" firstAttribute="centerX" secondItem="De5-BZ-w3Q" secondAttribute="centerX" id="Yfp-PA-c5Y"/>
+                <constraint firstItem="7Yy-zB-rZl" firstAttribute="leading" secondItem="De5-BZ-w3Q" secondAttribute="leading" id="bru-F4-oMO"/>
+                <constraint firstItem="7Yy-zB-rZl" firstAttribute="top" secondItem="abV-1x-T8H" secondAttribute="bottom" constant="9" id="il4-sB-wnY"/>
+                <constraint firstAttribute="trailing" secondItem="DcW-id-i7B" secondAttribute="trailing" id="uD2-hy-WMe"/>
+                <constraint firstItem="abV-1x-T8H" firstAttribute="top" secondItem="7bF-4o-4oJ" secondAttribute="bottom" constant="9" id="vJB-Zs-Cs0"/>
+                <constraint firstItem="DcW-id-i7B" firstAttribute="leading" secondItem="De5-BZ-w3Q" secondAttribute="leading" id="yY6-aq-jgP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="goh-ZV-rOl"/>
+            <size key="customSize" width="79" height="243"/>
+            <connections>
+                <outlet property="blockOutView" destination="DcW-id-i7B" id="dFw-KM-8eK"/>
+                <outlet property="middleDividerView" destination="abV-1x-T8H" id="ytf-Fq-ZCd"/>
+            </connections>
+            <point key="canvasLocation" x="41.304347826086961" y="161.71875"/>
+        </collectionViewCell>
+    </objects>
+</document>

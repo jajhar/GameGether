@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   UrbanAirship.plist
+   GameGether
+
+   Created by James Ajhar on 7/14/19.
+   Copyright (c) 2019 James Ajhar. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>developmentAppKey</key>
+        <string>Z6lBYni7TCq4fqbpD1WeIw</string>
+        <key>developmentAppSecret</key>
+        <string>ZhpjFUSySaW41rEI8mmjgg</string>
+        <key>productionAppKey</key>
+        <string>5yb4eioaQEyPn-cIYC9diw</string>
+        <key>productionAppSecret</key>
+        <string>GCMCHyQ0SwOPdPVoLsU9hw</string>
+    </dict>
+</plist>

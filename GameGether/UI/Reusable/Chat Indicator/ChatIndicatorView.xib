@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="X1A-PB-ylS" customClass="ChatIndicatorView" customModule="GameGether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Typing.gif" translatesAutoresizingMaskIntoConstraints="NO" id="y9e-9r-nkv" customClass="FLAnimatedImageView">
+                    <rect key="frame" x="43" y="7" width="30" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Ngz-tJ-d4O"/>
+                        <constraint firstAttribute="height" constant="8" id="csO-Gh-HxT"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="-6" translatesAutoresizingMaskIntoConstraints="NO" id="KEY-eJ-MDP">
+                    <rect key="frame" x="0.0" y="0.0" width="38" height="22"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pastel Green #66CC33" translatesAutoresizingMaskIntoConstraints="NO" id="4SD-0d-8Gj" customClass="AvatarInitialsImageView" customModule="GameGether" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="JOl-3m-8Cf"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pastel Green #66CC33" translatesAutoresizingMaskIntoConstraints="NO" id="0Ec-6A-TUb" customClass="AvatarInitialsImageView" customModule="GameGether" customModuleProvider="target">
+                            <rect key="frame" x="16" y="0.0" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="k25-wt-gNZ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KEY-eJ-MDP" firstAttribute="top" secondItem="X1A-PB-ylS" secondAttribute="top" id="8sC-WX-WqW"/>
+                <constraint firstItem="KEY-eJ-MDP" firstAttribute="leading" secondItem="X1A-PB-ylS" secondAttribute="leading" id="LJS-wb-aN2"/>
+                <constraint firstAttribute="bottom" secondItem="KEY-eJ-MDP" secondAttribute="bottom" id="cGR-mx-gNb"/>
+                <constraint firstItem="y9e-9r-nkv" firstAttribute="leading" secondItem="KEY-eJ-MDP" secondAttribute="trailing" constant="5" id="xZN-7z-wtD"/>
+                <constraint firstItem="y9e-9r-nkv" firstAttribute="centerY" secondItem="P6k-O5-GuT" secondAttribute="centerY" id="yRH-ZS-Sr3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="P6k-O5-GuT"/>
+            <connections>
+                <outlet property="animatedImageView" destination="y9e-9r-nkv" id="3GZ-V5-76S"/>
+                <outlet property="firstProfileImageView" destination="4SD-0d-8Gj" id="EyE-Uz-2is"/>
+                <outlet property="secondProfileImageView" destination="0Ec-6A-TUb" id="2MX-gz-ouE"/>
+            </connections>
+            <point key="canvasLocation" x="-130.40000000000001" y="-283.35832083958024"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Pastel Green #66CC33" width="16" height="16"/>
+        <image name="Typing.gif" width="133" height="34"/>
+    </resources>
+</document>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hls-yz-kJb">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Friends View Controller-->
+        <scene sceneID="MDd-8r-Ybz">
+            <objects>
+                <viewController storyboardIdentifier="FriendsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hls-yz-kJb" customClass="FriendsViewController" customModule="GameGether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jj9-pf-rb6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zKZ-VT-kHe" customClass="FriendsTableView" customModule="GameGether" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTm-d2-mcY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iL7-g0-cCv">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="327"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwoNinjas" translatesAutoresizingMaskIntoConstraints="NO" id="8aw-Vd-890">
+                                                <rect key="frame" x="93" y="0.0" width="189" height="120"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="friends = more fun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDE-dx-Ren">
+                                                <rect key="frame" x="104.5" y="152" width="166" height="26.5"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite friends and make new friends don’t you want someone watchin’ your back?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhd-XQ-3Va">
+                                                <rect key="frame" x="0.0" y="199.5" width="375" height="42.5"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbb-kj-VIr">
+                                                <rect key="frame" x="108" y="283" width="159" height="44"/>
+                                                <color key="backgroundColor" red="0.3411764705882353" green="0.63529411764705879" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="RDK-Zi-vWH"/>
+                                                    <constraint firstAttribute="width" constant="159" id="S8C-vg-2zY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                                <state key="normal" title="invite friends">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="21"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="inviteFriendsButtonTapped:" destination="Hls-yz-kJb" eventType="touchUpInside" id="3Qf-ll-AHl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="cbb-kj-VIr" firstAttribute="centerX" secondItem="iL7-g0-cCv" secondAttribute="centerX" id="3C7-Ob-XjE"/>
+                                            <constraint firstItem="ZDE-dx-Ren" firstAttribute="centerX" secondItem="iL7-g0-cCv" secondAttribute="centerX" id="7vg-3g-06c"/>
+                                            <constraint firstItem="ZDE-dx-Ren" firstAttribute="top" secondItem="8aw-Vd-890" secondAttribute="bottom" constant="32" id="Cbv-et-xGb"/>
+                                            <constraint firstItem="8aw-Vd-890" firstAttribute="centerX" secondItem="iL7-g0-cCv" secondAttribute="centerX" id="HCS-aj-SdS"/>
+                                            <constraint firstItem="8aw-Vd-890" firstAttribute="top" secondItem="iL7-g0-cCv" secondAttribute="top" id="IEV-vd-slU"/>
+                                            <constraint firstItem="8aw-Vd-890" firstAttribute="top" secondItem="iL7-g0-cCv" secondAttribute="top" id="Is2-Oa-8a7"/>
+                                            <constraint firstItem="Xhd-XQ-3Va" firstAttribute="centerX" secondItem="iL7-g0-cCv" secondAttribute="centerX" id="aqh-vP-DhR"/>
+                                            <constraint firstItem="Xhd-XQ-3Va" firstAttribute="top" secondItem="ZDE-dx-Ren" secondAttribute="bottom" constant="21" id="gt4-6E-YWD"/>
+                                            <constraint firstItem="Xhd-XQ-3Va" firstAttribute="leading" secondItem="iL7-g0-cCv" secondAttribute="leading" id="iCI-U3-pKx"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xhd-XQ-3Va" secondAttribute="trailing" id="l8x-Li-mbl"/>
+                                            <constraint firstAttribute="bottom" secondItem="cbb-kj-VIr" secondAttribute="bottom" id="nwv-Oc-WFM"/>
+                                            <constraint firstItem="cbb-kj-VIr" firstAttribute="top" secondItem="Xhd-XQ-3Va" secondAttribute="bottom" constant="41" id="x9L-dk-fTA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iL7-g0-cCv" secondAttribute="trailing" id="1r2-bX-hyg"/>
+                                    <constraint firstItem="iL7-g0-cCv" firstAttribute="leading" secondItem="rTm-d2-mcY" secondAttribute="leading" id="RIU-dU-89G"/>
+                                    <constraint firstItem="iL7-g0-cCv" firstAttribute="centerY" secondItem="rTm-d2-mcY" secondAttribute="centerY" constant="-50" id="bqq-bT-KFQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rTm-d2-mcY" firstAttribute="top" secondItem="jj9-pf-rb6" secondAttribute="top" id="5mW-9g-S0z"/>
+                            <constraint firstItem="zKZ-VT-kHe" firstAttribute="leading" secondItem="rrV-4L-fUF" secondAttribute="leading" id="6HI-5O-hyg"/>
+                            <constraint firstItem="rTm-d2-mcY" firstAttribute="leading" secondItem="jj9-pf-rb6" secondAttribute="leading" id="Chf-xe-beN"/>
+                            <constraint firstAttribute="bottom" secondItem="rTm-d2-mcY" secondAttribute="bottom" id="Jzn-cl-KNk"/>
+                            <constraint firstItem="rrV-4L-fUF" firstAttribute="bottom" secondItem="zKZ-VT-kHe" secondAttribute="bottom" id="Uhm-zw-OC3"/>
+                            <constraint firstItem="zKZ-VT-kHe" firstAttribute="top" secondItem="rrV-4L-fUF" secondAttribute="top" id="c5M-Ax-HOt"/>
+                            <constraint firstItem="rrV-4L-fUF" firstAttribute="trailing" secondItem="zKZ-VT-kHe" secondAttribute="trailing" id="sqc-aX-hFF"/>
+                            <constraint firstAttribute="trailing" secondItem="rTm-d2-mcY" secondAttribute="trailing" id="vut-Ir-vKT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rrV-4L-fUF"/>
+                    </view>
+                    <connections>
+                        <outlet property="emptyStateView" destination="rTm-d2-mcY" id="0II-nX-vRu"/>
+                        <outlet property="friendsTableView" destination="zKZ-VT-kHe" id="Z6P-Yh-H4s"/>
+                        <outlet property="inviteFriendsButton" destination="cbb-kj-VIr" id="YeP-T2-nZZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTc-lo-bmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.60000000000002" y="-175.86206896551727"/>
+        </scene>
+        <!--Add Friends View Controller-->
+        <scene sceneID="Jj7-9s-VaI">
+            <objects>
+                <viewController storyboardIdentifier="AddFriendsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lnm-73-RHR" customClass="AddFriendsViewController" customModule="GameGether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yGh-DM-KGh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzq-4b-Ult">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTL-EB-Mwv" userLabel="Cancel Button">
+                                        <rect key="frame" x="16" y="10.5" width="47" height="34"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                        <state key="normal" title="cancel">
+                                            <color key="titleColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="lnm-73-RHR" eventType="touchUpInside" id="pCM-2r-z5R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFY-AB-klc" userLabel="Send Button">
+                                        <rect key="frame" x="324" y="10.5" width="35" height="34"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                        <state key="normal" title="send">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendButtonPressed:" destination="lnm-73-RHR" eventType="touchUpInside" id="nlG-bx-J58"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txi-iy-85j">
+                                        <rect key="frame" x="144.5" y="17" width="86" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Txi-iy-85j" firstAttribute="centerY" secondItem="kzq-4b-Ult" secondAttribute="centerY" id="0nz-48-yl5"/>
+                                    <constraint firstItem="DTL-EB-Mwv" firstAttribute="leading" secondItem="kzq-4b-Ult" secondAttribute="leading" constant="16" id="80s-a4-0Oy"/>
+                                    <constraint firstAttribute="trailing" secondItem="UFY-AB-klc" secondAttribute="trailing" constant="16" id="Lo4-yt-Z70"/>
+                                    <constraint firstItem="UFY-AB-klc" firstAttribute="centerY" secondItem="kzq-4b-Ult" secondAttribute="centerY" id="Qmc-Bc-0EJ"/>
+                                    <constraint firstItem="Txi-iy-85j" firstAttribute="centerX" secondItem="kzq-4b-Ult" secondAttribute="centerX" id="ZrE-XT-kQt"/>
+                                    <constraint firstItem="DTL-EB-Mwv" firstAttribute="centerY" secondItem="kzq-4b-Ult" secondAttribute="centerY" id="flr-Wr-S5A"/>
+                                    <constraint firstAttribute="height" constant="55" id="wXR-1s-iXy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="il3-Z9-Du6">
+                                <rect key="frame" x="0.0" y="55" width="375" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GG Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cmd-yI-Pyq">
+                                        <rect key="frame" x="54" y="9" width="27" height="22"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add by gamertag" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u4D-Jh-GUo" customClass="GamerTagSearchTextField" customModule="GameGether" customModuleProvider="target">
+                                        <rect key="frame" x="92" y="0.0" width="283" height="40"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="gamerTagFieldTextDidChange:" destination="lnm-73-RHR" eventType="editingChanged" id="OKs-zV-3FU"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="u4D-Jh-GUo" secondAttribute="trailing" id="24w-Ew-8Os"/>
+                                    <constraint firstAttribute="height" constant="40" id="4ZT-dj-Saa"/>
+                                    <constraint firstItem="u4D-Jh-GUo" firstAttribute="leading" secondItem="cmd-yI-Pyq" secondAttribute="trailing" constant="11" id="Bra-cm-TV9"/>
+                                    <constraint firstAttribute="bottom" secondItem="u4D-Jh-GUo" secondAttribute="bottom" id="VMq-rF-CYg"/>
+                                    <constraint firstItem="cmd-yI-Pyq" firstAttribute="leading" secondItem="il3-Z9-Du6" secondAttribute="leading" constant="54" id="a0D-8q-jeu"/>
+                                    <constraint firstItem="u4D-Jh-GUo" firstAttribute="top" secondItem="il3-Z9-Du6" secondAttribute="top" id="hLm-D5-LnC"/>
+                                    <constraint firstItem="cmd-yI-Pyq" firstAttribute="centerY" secondItem="il3-Z9-Du6" secondAttribute="centerY" id="vUv-OA-hDe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ays-yz-hNX">
+                                <rect key="frame" x="0.0" y="95" width="375" height="572"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eDV-No-ufi">
+                                        <rect key="frame" x="0.0" y="46" width="375" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X14-48-hN9">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Link - Share" translatesAutoresizingMaskIntoConstraints="NO" id="adq-QQ-clQ">
+                                                        <rect key="frame" x="54" y="8.5" width="23" height="23"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="share the app with friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPr-AP-CAS">
+                                                        <rect key="frame" x="88" y="0.0" width="163.5" height="40"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3E0-ep-HBy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                        <connections>
+                                                            <action selector="shareInviteLinkedPressed:" destination="lnm-73-RHR" eventType="touchUpInside" id="Xmm-lP-ZdU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.75" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="3E0-ep-HBy" firstAttribute="top" secondItem="X14-48-hN9" secondAttribute="top" id="7H2-9J-MOc"/>
+                                                    <constraint firstItem="adq-QQ-clQ" firstAttribute="centerY" secondItem="X14-48-hN9" secondAttribute="centerY" id="IRD-0t-HDp"/>
+                                                    <constraint firstItem="adq-QQ-clQ" firstAttribute="leading" secondItem="X14-48-hN9" secondAttribute="leading" constant="54" id="NeH-2r-pam"/>
+                                                    <constraint firstItem="GPr-AP-CAS" firstAttribute="top" secondItem="X14-48-hN9" secondAttribute="top" id="Vy8-37-jUf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GPr-AP-CAS" secondAttribute="bottom" id="Wmj-rY-3MZ"/>
+                                                    <constraint firstAttribute="height" constant="40" id="fpp-XN-etr"/>
+                                                    <constraint firstItem="GPr-AP-CAS" firstAttribute="leading" secondItem="adq-QQ-clQ" secondAttribute="trailing" constant="11" id="jUg-R7-4ha"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GPr-AP-CAS" secondAttribute="trailing" id="med-pb-etr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3E0-ep-HBy" secondAttribute="trailing" id="r9W-NK-Rsy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3E0-ep-HBy" secondAttribute="bottom" id="uJZ-to-52g"/>
+                                                    <constraint firstItem="3E0-ep-HBy" firstAttribute="leading" secondItem="X14-48-hN9" secondAttribute="leading" id="ytd-u4-HBP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eDV-No-ufi" firstAttribute="top" secondItem="Ays-yz-hNX" secondAttribute="top" constant="46" id="9Iz-V9-ZT9"/>
+                                    <constraint firstAttribute="trailing" secondItem="eDV-No-ufi" secondAttribute="trailing" id="cYs-dr-uj3"/>
+                                    <constraint firstItem="eDV-No-ufi" firstAttribute="leading" secondItem="Ays-yz-hNX" secondAttribute="leading" id="gh1-e1-CN0"/>
+                                </constraints>
+                            </view>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LvQ-RJ-0fE" customClass="SearchUsersTableView" customModule="GameGether" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="95" width="375" height="572"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on send to add this gamertag as a friend." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ0-IH-yF4">
+                                <rect key="frame" x="62.5" y="99" width="250.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="il3-Z9-Du6" firstAttribute="trailing" secondItem="EWz-mf-eXD" secondAttribute="trailing" id="0iQ-k4-YvL"/>
+                            <constraint firstItem="EWz-mf-eXD" firstAttribute="trailing" secondItem="LvQ-RJ-0fE" secondAttribute="trailing" id="9Ey-3j-YEA"/>
+                            <constraint firstItem="EJ0-IH-yF4" firstAttribute="centerX" secondItem="EWz-mf-eXD" secondAttribute="centerX" id="HrL-ZW-Ezf"/>
+                            <constraint firstItem="EJ0-IH-yF4" firstAttribute="top" secondItem="il3-Z9-Du6" secondAttribute="bottom" constant="4" id="ISO-mv-uC4"/>
+                            <constraint firstItem="Ays-yz-hNX" firstAttribute="top" secondItem="il3-Z9-Du6" secondAttribute="bottom" id="KeZ-Ih-HkC"/>
+                            <constraint firstItem="LvQ-RJ-0fE" firstAttribute="leading" secondItem="EWz-mf-eXD" secondAttribute="leading" id="Ki8-y0-UmS"/>
+                            <constraint firstItem="Ays-yz-hNX" firstAttribute="leading" secondItem="EWz-mf-eXD" secondAttribute="leading" id="M8m-9Q-MM7"/>
+                            <constraint firstItem="il3-Z9-Du6" firstAttribute="top" secondItem="kzq-4b-Ult" secondAttribute="bottom" id="UkL-MF-A3Q"/>
+                            <constraint firstItem="EWz-mf-eXD" firstAttribute="trailing" secondItem="Ays-yz-hNX" secondAttribute="trailing" id="ajj-Av-64D"/>
+                            <constraint firstItem="LvQ-RJ-0fE" firstAttribute="top" secondItem="il3-Z9-Du6" secondAttribute="bottom" id="dIx-FE-nxC"/>
+                            <constraint firstItem="EWz-mf-eXD" firstAttribute="trailing" secondItem="kzq-4b-Ult" secondAttribute="trailing" id="ecB-KW-pjB"/>
+                            <constraint firstItem="EWz-mf-eXD" firstAttribute="bottom" secondItem="LvQ-RJ-0fE" secondAttribute="bottom" id="ed2-6e-QWu"/>
+                            <constraint firstItem="kzq-4b-Ult" firstAttribute="leading" secondItem="EWz-mf-eXD" secondAttribute="leading" id="ipf-O5-0cc"/>
+                            <constraint firstItem="kzq-4b-Ult" firstAttribute="top" secondItem="EWz-mf-eXD" secondAttribute="top" id="o1M-5R-D5n"/>
+                            <constraint firstItem="EWz-mf-eXD" firstAttribute="bottom" secondItem="Ays-yz-hNX" secondAttribute="bottom" id="pgj-Yp-SLL"/>
+                            <constraint firstItem="il3-Z9-Du6" firstAttribute="leading" secondItem="EWz-mf-eXD" secondAttribute="leading" id="tO6-IG-yMv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EWz-mf-eXD"/>
+                    </view>
+                    <connections>
+                        <outlet property="gamerTagField" destination="u4D-Jh-GUo" id="TYT-uG-63f"/>
+                        <outlet property="infoLabel" destination="EJ0-IH-yF4" id="b20-z4-XYO"/>
+                        <outlet property="searchUsersTableView" destination="LvQ-RJ-0fE" id="73t-sv-hWd"/>
+                        <outlet property="sendButton" destination="UFY-AB-klc" id="ygH-ey-EXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FuH-EK-9oo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.8" y="-175.86206896551727"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GG Logo" width="27" height="22"/>
+        <image name="Link - Share" width="23" height="23"/>
+        <image name="TwoNinjas" width="189" height="120"/>
+    </resources>
+</document>

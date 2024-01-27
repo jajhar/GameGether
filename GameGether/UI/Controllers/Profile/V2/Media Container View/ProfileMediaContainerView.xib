@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VRS-7l-Dgi" customClass="ProfileMediaContainerView" customModule="GameGether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRw-0j-2Ue">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-vr-GBs" customClass="ProfileMediaStackView" customModule="GameGether" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="828" height="280"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="828" placeholder="YES" id="T4W-LL-1zw"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1Cg-vr-GBs" firstAttribute="centerY" secondItem="wRw-0j-2Ue" secondAttribute="centerY" id="DTi-Bz-xvK"/>
+                        <constraint firstItem="1Cg-vr-GBs" firstAttribute="leading" secondItem="wRw-0j-2Ue" secondAttribute="leading" id="VMP-sk-WqB"/>
+                        <constraint firstItem="1Cg-vr-GBs" firstAttribute="top" secondItem="wRw-0j-2Ue" secondAttribute="top" id="VQR-Ki-lzk"/>
+                        <constraint firstAttribute="trailing" secondItem="1Cg-vr-GBs" secondAttribute="trailing" id="WrG-pg-Cwg"/>
+                        <constraint firstItem="1Cg-vr-GBs" firstAttribute="height" secondItem="wRw-0j-2Ue" secondAttribute="height" id="hp6-uU-mRz"/>
+                        <constraint firstAttribute="bottom" secondItem="1Cg-vr-GBs" secondAttribute="bottom" id="nep-sQ-7Zr"/>
+                    </constraints>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="noZ-BG-Fzu">
+                    <rect key="frame" x="187.5" y="280" width="39" height="20"/>
+                    <color key="pageIndicatorTintColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.3411764706" green="0.63529411759999999" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3Q-y7-spl">
+                    <rect key="frame" x="314" y="241" width="90" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="6oJ-uD-7ul"/>
+                        <constraint firstAttribute="height" constant="30" id="qx4-Ho-xrE"/>
+                    </constraints>
+                    <state key="normal" title="edit 0/0">
+                        <color key="titleColor" red="0.3411764706" green="0.63529411759999999" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="editButtonPressed:" destination="VRS-7l-Dgi" eventType="touchUpInside" id="c5Y-fH-GzI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wRw-0j-2Ue" firstAttribute="leading" secondItem="VRS-7l-Dgi" secondAttribute="leading" id="BRI-1W-ZyF"/>
+                <constraint firstItem="wRw-0j-2Ue" firstAttribute="top" secondItem="VRS-7l-Dgi" secondAttribute="top" id="Boh-6B-g52"/>
+                <constraint firstAttribute="trailing" secondItem="wRw-0j-2Ue" secondAttribute="trailing" id="G5k-TO-Vsw"/>
+                <constraint firstAttribute="bottom" secondItem="noZ-BG-Fzu" secondAttribute="bottom" id="WQT-oH-Of6"/>
+                <constraint firstAttribute="bottom" secondItem="wRw-0j-2Ue" secondAttribute="bottom" constant="20" id="YfL-Za-KRA"/>
+                <constraint firstItem="noZ-BG-Fzu" firstAttribute="top" secondItem="wRw-0j-2Ue" secondAttribute="bottom" id="Zee-UA-Hok"/>
+                <constraint firstItem="p3Q-y7-spl" firstAttribute="trailing" secondItem="wRw-0j-2Ue" secondAttribute="trailing" constant="-10" id="aC7-t2-BwE"/>
+                <constraint firstItem="p3Q-y7-spl" firstAttribute="bottom" secondItem="wRw-0j-2Ue" secondAttribute="bottom" constant="-9" id="pYD-AR-UOI"/>
+                <constraint firstItem="noZ-BG-Fzu" firstAttribute="centerX" secondItem="VRS-7l-Dgi" secondAttribute="centerX" id="shO-w1-SmS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editButton" destination="p3Q-y7-spl" id="KOR-cq-2If"/>
+                <outlet property="mediaScrollView" destination="wRw-0j-2Ue" id="CSz-jM-QJK"/>
+                <outlet property="mediaViewStack" destination="1Cg-vr-GBs" id="UqY-ob-Zjf"/>
+                <outlet property="pageControls" destination="noZ-BG-Fzu" id="tNx-ma-BvB"/>
+            </connections>
+            <point key="canvasLocation" x="371.01449275362324" y="236.38392857142856"/>
+        </view>
+    </objects>
+</document>

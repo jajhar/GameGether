@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LobbyEmptyStateCollectionViewCell" customModule="GameGether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discoverlobbies" translatesAutoresizingMaskIntoConstraints="NO" id="RVV-Sc-glQ">
+                        <rect key="frame" x="0.0" y="0.0" width="337" height="50"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClosedLobby" translatesAutoresizingMaskIntoConstraints="NO" id="Hac-GU-HTH">
+                        <rect key="frame" x="10" y="10" width="22" height="30"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="click here to discover other lobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEU-gJ-KS3">
+                        <rect key="frame" x="37" y="16" width="239.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Hac-GU-HTH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="1YQ-ib-hsj"/>
+                <constraint firstItem="RVV-Sc-glQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4eK-We-x7f"/>
+                <constraint firstItem="RVV-Sc-glQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7WQ-Xk-KMG"/>
+                <constraint firstAttribute="trailing" secondItem="RVV-Sc-glQ" secondAttribute="trailing" id="Evv-Sr-Yea"/>
+                <constraint firstItem="QEU-gJ-KS3" firstAttribute="leading" secondItem="Hac-GU-HTH" secondAttribute="trailing" constant="5" id="MtG-1g-qyO"/>
+                <constraint firstItem="QEU-gJ-KS3" firstAttribute="centerY" secondItem="Hac-GU-HTH" secondAttribute="centerY" id="cCz-w2-dQk"/>
+                <constraint firstItem="Hac-GU-HTH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="n7H-MT-l5U"/>
+                <constraint firstAttribute="bottom" secondItem="RVV-Sc-glQ" secondAttribute="bottom" id="wUz-ob-xc2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="337" height="50"/>
+            <connections>
+                <outlet property="titleLabel" destination="QEU-gJ-KS3" id="MTE-VS-bRK"/>
+            </connections>
+            <point key="canvasLocation" x="-70.28985507246378" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ClosedLobby" width="22" height="30"/>
+        <image name="discoverlobbies" width="357" height="46"/>
+    </resources>
+</document>

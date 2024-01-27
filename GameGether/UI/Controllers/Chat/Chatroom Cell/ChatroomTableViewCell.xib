@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatroomTableViewCell" rowHeight="79" id="ydL-bx-O52" customClass="ChatroomTableViewCell" customModule="GameGether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="79"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ydL-bx-O52" id="sSL-hv-Kdd">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="78.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenCheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="3fP-n4-wTf">
+                        <rect key="frame" x="0.0" y="25" width="0.0" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="EYu-VW-4QG"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hjW-95-Kxb">
+                        <rect key="frame" x="13" y="10" width="44" height="44"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbZ-Do-2Kd" customClass="MultiAvatarView" customModule="GameGether" customModuleProvider="target">
+                        <rect key="frame" x="13" y="10" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="1EM-R3-jf0"/>
+                            <constraint firstAttribute="width" constant="44" id="5qV-qj-fag"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B8-F6-E14">
+                        <rect key="frame" x="45" y="4" width="18" height="18"/>
+                        <color key="backgroundColor" red="0.99903267620000002" green="0.19832858440000001" blue="0.39804124829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="20J-KH-fVg"/>
+                            <constraint firstAttribute="width" constant="18" id="YnY-Hb-GBg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AXC-Zz-9Ux" customClass="UserStatusImageView" customModule="GameGether" customModuleProvider="target">
+                        <rect key="frame" x="45" y="42" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="aLH-vl-6FS"/>
+                            <constraint firstAttribute="height" constant="12" id="lnz-26-ATz"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hhv-Jw-Gb5">
+                        <rect key="frame" x="70" y="6" width="279" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UE-JV-4Pc">
+                                <rect key="frame" x="0.0" y="0.0" width="224" height="50"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu0-EY-2r2">
+                                <rect key="frame" x="229" y="0.0" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vme-uO-6fW">
+                        <rect key="frame" x="70" y="56" width="320" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hjW-95-Kxb" firstAttribute="height" secondItem="IbZ-Do-2Kd" secondAttribute="height" id="5GB-6t-hrO"/>
+                    <constraint firstItem="Hhv-Jw-Gb5" firstAttribute="leading" secondItem="IbZ-Do-2Kd" secondAttribute="trailing" constant="13" id="9MC-Uc-qRh"/>
+                    <constraint firstItem="3fP-n4-wTf" firstAttribute="leading" secondItem="sSL-hv-Kdd" secondAttribute="leading" id="Ath-Xg-DvV"/>
+                    <constraint firstItem="AXC-Zz-9Ux" firstAttribute="trailing" secondItem="IbZ-Do-2Kd" secondAttribute="trailing" id="GkP-Wt-TCV"/>
+                    <constraint firstItem="vme-uO-6fW" firstAttribute="leading" secondItem="Hhv-Jw-Gb5" secondAttribute="leading" id="I2O-s5-1vt"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hhv-Jw-Gb5" secondAttribute="trailing" constant="5" id="IuK-Hc-wKr"/>
+                    <constraint firstItem="3fP-n4-wTf" firstAttribute="centerY" secondItem="sSL-hv-Kdd" secondAttribute="centerY" id="LUq-GH-GAq"/>
+                    <constraint firstItem="hjW-95-Kxb" firstAttribute="leading" secondItem="3fP-n4-wTf" secondAttribute="trailing" constant="13" id="Xpg-J7-ah4"/>
+                    <constraint firstItem="AXC-Zz-9Ux" firstAttribute="bottom" secondItem="IbZ-Do-2Kd" secondAttribute="bottom" id="aTP-t6-aCc"/>
+                    <constraint firstItem="3B8-F6-E14" firstAttribute="top" secondItem="hjW-95-Kxb" secondAttribute="top" constant="-6" id="aba-Nu-nWA"/>
+                    <constraint firstItem="hjW-95-Kxb" firstAttribute="centerX" secondItem="IbZ-Do-2Kd" secondAttribute="centerX" id="aoh-yu-lRn"/>
+                    <constraint firstItem="IbZ-Do-2Kd" firstAttribute="top" secondItem="sSL-hv-Kdd" secondAttribute="top" constant="10" id="gPg-VS-Gft"/>
+                    <constraint firstItem="vme-uO-6fW" firstAttribute="top" secondItem="Hhv-Jw-Gb5" secondAttribute="bottom" id="igF-1H-ZfY"/>
+                    <constraint firstAttribute="trailing" secondItem="vme-uO-6fW" secondAttribute="trailing" constant="5" id="j8v-wi-uJS"/>
+                    <constraint firstItem="hjW-95-Kxb" firstAttribute="centerY" secondItem="IbZ-Do-2Kd" secondAttribute="centerY" id="jVG-Ef-j6y"/>
+                    <constraint firstItem="Hhv-Jw-Gb5" firstAttribute="top" secondItem="IbZ-Do-2Kd" secondAttribute="top" constant="-4" id="lO5-hI-lXI"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vme-uO-6fW" secondAttribute="bottom" constant="10" id="o6q-TS-VwE"/>
+                    <constraint firstItem="hjW-95-Kxb" firstAttribute="width" secondItem="IbZ-Do-2Kd" secondAttribute="width" id="qQL-mI-CNM"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="IbZ-Do-2Kd" secondAttribute="bottom" constant="10" id="ukI-nR-mgD"/>
+                    <constraint firstItem="3B8-F6-E14" firstAttribute="trailing" secondItem="hjW-95-Kxb" secondAttribute="trailing" constant="6" id="yyV-75-V8K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chatroomImageView" destination="hjW-95-Kxb" id="0WV-fY-XMR"/>
+                <outlet property="checkMarkImageView" destination="3fP-n4-wTf" id="b1Z-Sq-d9z"/>
+                <outlet property="checkMarkLeadingConstraint" destination="Ath-Xg-DvV" id="LvM-6t-ZL7"/>
+                <outlet property="checkMarkWidthConstraint" destination="EYu-VW-4QG" id="ENx-oX-JSV"/>
+                <outlet property="dateLabel" destination="xu0-EY-2r2" id="Nbf-Jb-uJe"/>
+                <outlet property="ignLabel" destination="5UE-JV-4Pc" id="poI-nM-2Oj"/>
+                <outlet property="messageLabel" destination="vme-uO-6fW" id="emT-Jb-uhu"/>
+                <outlet property="multiAvatarView" destination="IbZ-Do-2Kd" id="vhu-28-WLf"/>
+                <outlet property="unreadLabel" destination="3B8-F6-E14" id="pwI-Cv-qFD"/>
+                <outlet property="userStatusImageView" destination="AXC-Zz-9Ux" id="KYf-EQ-bNf"/>
+            </connections>
+            <point key="canvasLocation" x="-96.799999999999997" y="15.742128935532236"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="GreenCheckMark" width="29" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rtg-1M-EIs" customClass="TextInputView" customModule="GameGether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" tag="9999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVP-bk-NNf">
+                    <rect key="frame" x="40" y="4" width="370" height="58"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" tag="9999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ou4-6m-puY" customClass="FLAnimatedImageView">
+                            <rect key="frame" x="3" y="3" width="240" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="84o-xp-FYX"/>
+                                <constraint firstAttribute="width" constant="240" id="kKc-ok-UBu"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="9999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COj-0F-yUD" customClass="GrowingTextView" customModule="GrowingTextView">
+                            <rect key="frame" x="0.0" y="0.0" width="327.5" height="58"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                        </textView>
+                        <button hidden="YES" opaque="NO" tag="9999" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-RE-UM9">
+                            <rect key="frame" x="335.5" y="25.5" width="34.5" height="32.5"/>
+                            <state key="normal" image="SendMsgActive"/>
+                            <state key="disabled" image="SendMsgGrayscale"/>
+                            <connections>
+                                <action selector="sendMessageButtonTapped:" destination="Rtg-1M-EIs" eventType="touchUpInside" id="5Kf-Tx-Cri"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="9999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghn-XH-CA8" userLabel="Delete Media">
+                            <rect key="frame" x="208" y="8" width="30" height="30"/>
+                            <state key="normal" image="CloseTransparent"/>
+                            <connections>
+                                <action selector="deleteMediaButtonPressed:" destination="Rtg-1M-EIs" eventType="touchUpInside" id="DHG-WG-0Oj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ou4-6m-puY" firstAttribute="leading" secondItem="jVP-bk-NNf" secondAttribute="leading" constant="3" id="Cfq-Kr-Udn"/>
+                        <constraint firstAttribute="trailing" secondItem="Ffs-RE-UM9" secondAttribute="trailing" id="IVA-bN-dOG"/>
+                        <constraint firstAttribute="bottom" secondItem="Ou4-6m-puY" secondAttribute="bottom" constant="3" id="Khj-tt-WmB"/>
+                        <constraint firstItem="COj-0F-yUD" firstAttribute="leading" secondItem="jVP-bk-NNf" secondAttribute="leading" id="LZt-R9-7co"/>
+                        <constraint firstItem="COj-0F-yUD" firstAttribute="top" secondItem="jVP-bk-NNf" secondAttribute="top" id="V1i-33-wjF"/>
+                        <constraint firstItem="Ffs-RE-UM9" firstAttribute="leading" secondItem="COj-0F-yUD" secondAttribute="trailing" constant="8" id="VJL-MD-0x9"/>
+                        <constraint firstAttribute="bottom" secondItem="Ffs-RE-UM9" secondAttribute="bottom" id="hcj-NL-Eov"/>
+                        <constraint firstItem="Ou4-6m-puY" firstAttribute="top" secondItem="jVP-bk-NNf" secondAttribute="top" constant="3" id="oua-7B-GIX"/>
+                        <constraint firstItem="ghn-XH-CA8" firstAttribute="trailing" secondItem="Ou4-6m-puY" secondAttribute="trailing" constant="-5" id="oxk-Ke-2eO"/>
+                        <constraint firstAttribute="bottom" secondItem="COj-0F-yUD" secondAttribute="bottom" id="tPX-nQ-99v"/>
+                        <constraint firstItem="ghn-XH-CA8" firstAttribute="top" secondItem="Ou4-6m-puY" secondAttribute="top" constant="5" id="te4-rw-j8A"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44H-WG-65D">
+                    <rect key="frame" x="40" y="4" width="370" height="58"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TypeArea" translatesAutoresizingMaskIntoConstraints="NO" id="54S-L1-FoL">
+                            <rect key="frame" x="0.0" y="0.0" width="370" height="58"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="msg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouv-51-wjn">
+                            <rect key="frame" x="9" y="18.5" width="33" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="54S-L1-FoL" firstAttribute="top" secondItem="44H-WG-65D" secondAttribute="top" id="MPC-dc-CxW"/>
+                        <constraint firstItem="Ouv-51-wjn" firstAttribute="centerY" secondItem="44H-WG-65D" secondAttribute="centerY" id="gE0-jB-Vje"/>
+                        <constraint firstAttribute="trailing" secondItem="54S-L1-FoL" secondAttribute="trailing" id="qdD-Wg-LCO"/>
+                        <constraint firstItem="Ouv-51-wjn" firstAttribute="leading" secondItem="44H-WG-65D" secondAttribute="leading" constant="9" id="qz8-qU-BEp"/>
+                        <constraint firstAttribute="bottom" secondItem="54S-L1-FoL" secondAttribute="bottom" id="uN7-Sw-P4r"/>
+                        <constraint firstItem="54S-L1-FoL" firstAttribute="leading" secondItem="44H-WG-65D" secondAttribute="leading" id="wR1-zJ-SHF"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="9999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAc-4O-SqQ" userLabel="Giphy Button">
+                    <rect key="frame" x="0.0" y="26" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1tC-ic-rT5"/>
+                        <constraint firstAttribute="width" constant="40" id="ao0-05-PXn"/>
+                    </constraints>
+                    <state key="normal" image="GIF"/>
+                    <connections>
+                        <action selector="giphyButtonPressed:" destination="Rtg-1M-EIs" eventType="touchUpInside" id="fuU-X8-XEj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jVP-bk-NNf" secondAttribute="bottom" constant="4" id="CjD-8P-iSI"/>
+                <constraint firstAttribute="trailing" secondItem="jVP-bk-NNf" secondAttribute="trailing" constant="4" id="MUK-Mf-BuU"/>
+                <constraint firstItem="44H-WG-65D" firstAttribute="trailing" secondItem="jVP-bk-NNf" secondAttribute="trailing" id="Vxj-QS-0sy"/>
+                <constraint firstItem="jVP-bk-NNf" firstAttribute="top" secondItem="Rtg-1M-EIs" secondAttribute="top" constant="4" id="cfC-yE-f7k"/>
+                <constraint firstItem="EAc-4O-SqQ" firstAttribute="leading" secondItem="HGa-HA-nE2" secondAttribute="leading" id="dt3-p1-ypo"/>
+                <constraint firstItem="44H-WG-65D" firstAttribute="top" secondItem="jVP-bk-NNf" secondAttribute="top" id="fr9-s2-POE"/>
+                <constraint firstItem="44H-WG-65D" firstAttribute="bottom" secondItem="jVP-bk-NNf" secondAttribute="bottom" id="gRM-Lx-le2"/>
+                <constraint firstItem="jVP-bk-NNf" firstAttribute="leading" secondItem="EAc-4O-SqQ" secondAttribute="trailing" id="nwi-kI-LN9"/>
+                <constraint firstItem="44H-WG-65D" firstAttribute="leading" secondItem="jVP-bk-NNf" secondAttribute="leading" id="rCO-ti-wL7"/>
+                <constraint firstItem="EAc-4O-SqQ" firstAttribute="centerY" secondItem="Ffs-RE-UM9" secondAttribute="centerY" id="uCC-ca-i9I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="HGa-HA-nE2"/>
+            <connections>
+                <outlet property="collapsedStateContainerView" destination="44H-WG-65D" id="4Te-Tc-OXR"/>
+                <outlet property="collapsedStateImageView" destination="54S-L1-FoL" id="qjf-yh-r86"/>
+                <outlet property="collapsedStateTitleLabel" destination="Ouv-51-wjn" id="q7Y-Pc-jU8"/>
+                <outlet property="deleteMediaButton" destination="ghn-XH-CA8" id="jOe-gt-EOL"/>
+                <outlet property="giphyButton" destination="EAc-4O-SqQ" id="0ix-B5-qEW"/>
+                <outlet property="giphyButtonWidthConstraint" destination="ao0-05-PXn" id="ceq-gY-e9t"/>
+                <outlet property="mediaImageHeightConstraint" destination="84o-xp-FYX" id="nd6-Sx-9xj"/>
+                <outlet property="mediaImageView" destination="Ou4-6m-puY" id="bgz-kl-4Mo"/>
+                <outlet property="mediaImageViewBottomConstraint" destination="Khj-tt-WmB" id="xG9-kV-5AA"/>
+                <outlet property="mediaImageWidthConstraint" destination="kKc-ok-UBu" id="o5d-Gv-JMu"/>
+                <outlet property="sendButton" destination="Ffs-RE-UM9" id="eBQ-Nr-DGN"/>
+                <outlet property="textInputContainerView" destination="jVP-bk-NNf" id="Ar8-81-2GK"/>
+                <outlet property="textView" destination="COj-0F-yUD" id="gHX-Tz-obR"/>
+                <outlet property="textViewTopConstraint" destination="V1i-33-wjF" id="VDI-j3-l4t"/>
+            </connections>
+            <point key="canvasLocation" x="164.80000000000001" y="754.72263868065977"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseTransparent" width="30" height="30"/>
+        <image name="GIF" width="24" height="24"/>
+        <image name="SendMsgActive" width="34.5" height="32.5"/>
+        <image name="SendMsgGrayscale" width="34.5" height="32.5"/>
+        <image name="TypeArea" width="121" height="31.5"/>
+    </resources>
+</document>

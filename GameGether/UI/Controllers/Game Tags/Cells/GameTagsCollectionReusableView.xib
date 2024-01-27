@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GameTagsCollectionReusableView" id="U6b-Vx-4bR" customClass="GameTagsCollectionReusableView" customModule="GameGether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUp-1Q-UCB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="FBv-jG-GA8"/>
+                    </constraints>
+                </imageView>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dj8-0J-oA6">
+                    <rect key="frame" x="0.0" y="229" width="320" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome! displaying lobbies…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shX-Eq-3oI">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="shX-Eq-3oI" firstAttribute="leading" secondItem="dj8-0J-oA6" secondAttribute="leading" id="ADr-ky-3mU"/>
+                        <constraint firstAttribute="trailing" secondItem="shX-Eq-3oI" secondAttribute="trailing" id="R7V-mY-z84"/>
+                        <constraint firstAttribute="height" constant="31" id="RI8-6Z-HM8"/>
+                        <constraint firstAttribute="bottom" secondItem="shX-Eq-3oI" secondAttribute="bottom" id="fse-cc-bQp"/>
+                        <constraint firstItem="shX-Eq-3oI" firstAttribute="top" secondItem="dj8-0J-oA6" secondAttribute="top" id="rFg-66-j6F"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQ2-wg-Vxa">
+                    <rect key="frame" x="0.0" y="260" width="320" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="XiQ-V6-xd2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pQ2-wg-Vxa" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="Lkq-fm-r0X"/>
+                <constraint firstItem="dj8-0J-oA6" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="N11-A1-NQf"/>
+                <constraint firstAttribute="trailing" secondItem="NUp-1Q-UCB" secondAttribute="trailing" id="TDx-Qn-qV1"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="dj8-0J-oA6" secondAttribute="bottom" id="YnQ-nX-3sw"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="NUp-1Q-UCB" secondAttribute="bottom" id="Yyk-47-nzR"/>
+                <constraint firstItem="NUp-1Q-UCB" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="fx5-Du-Sfm"/>
+                <constraint firstItem="pQ2-wg-Vxa" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="g8T-Gw-nBh"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="dj8-0J-oA6" secondAttribute="trailing" id="jOy-Jx-s3B"/>
+                <constraint firstItem="NUp-1Q-UCB" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="qqY-cq-iEM"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="pQ2-wg-Vxa" secondAttribute="trailing" id="qvw-3u-TLl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="imageView" destination="NUp-1Q-UCB" id="WUn-tt-RD5"/>
+                <outlet property="titleLabel" destination="shX-Eq-3oI" id="bq4-z5-7ui"/>
+                <outlet property="tooltipAnchorView" destination="pQ2-wg-Vxa" id="1OS-Cs-X0M"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="85.457271364317847"/>
+        </collectionReusableView>
+    </objects>
+</document>

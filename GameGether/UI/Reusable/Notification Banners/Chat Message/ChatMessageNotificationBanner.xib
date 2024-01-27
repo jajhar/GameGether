@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatMessageNotificationBanner" customModule="GameGether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VY4-ZO-EcE">
+                    <rect key="frame" x="66" y="7" width="314" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pc2-rH-tcX">
+                    <rect key="frame" x="0.0" y="57" width="396" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="UzP-i2-bRI"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qV-9X-0gT" customClass="AvatarInitialsImageView" customModule="GameGether" customModuleProvider="target">
+                    <rect key="frame" x="16" y="7" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2qV-9X-0gT" secondAttribute="height" multiplier="1:1" id="Clt-6Q-OkM"/>
+                        <constraint firstAttribute="width" constant="40" id="Nsp-s5-DWg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pc2-rH-tcX" firstAttribute="top" secondItem="2qV-9X-0gT" secondAttribute="bottom" constant="10" id="1mC-Wr-Ucx"/>
+                <constraint firstItem="VY4-ZO-EcE" firstAttribute="bottom" secondItem="2qV-9X-0gT" secondAttribute="bottom" id="9tn-lj-kpe"/>
+                <constraint firstItem="pc2-rH-tcX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AuF-Lu-YBd"/>
+                <constraint firstAttribute="bottom" secondItem="pc2-rH-tcX" secondAttribute="bottom" id="Ded-6j-rqT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VY4-ZO-EcE" secondAttribute="trailing" constant="16" id="Fi4-Pc-MNU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pc2-rH-tcX" secondAttribute="trailing" id="Gpp-8G-8ah"/>
+                <constraint firstItem="VY4-ZO-EcE" firstAttribute="top" secondItem="2qV-9X-0gT" secondAttribute="top" id="ede-KJ-Tfb"/>
+                <constraint firstItem="VY4-ZO-EcE" firstAttribute="leading" secondItem="2qV-9X-0gT" secondAttribute="trailing" constant="10" id="sIn-DF-vta"/>
+                <constraint firstItem="2qV-9X-0gT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="wTv-dl-3Ua"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="messageLabel" destination="VY4-ZO-EcE" id="bjY-3U-sjt"/>
+                <outlet property="userImageView" destination="2qV-9X-0gT" id="mSe-yw-Uft"/>
+            </connections>
+            <point key="canvasLocation" x="70.400000000000006" y="340.02998500749629"/>
+        </view>
+    </objects>
+</document>

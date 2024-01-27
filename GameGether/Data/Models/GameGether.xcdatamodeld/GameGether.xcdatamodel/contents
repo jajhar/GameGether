@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FollowedTagsMO" representedClassName=".FollowedTagsMO" syncable="YES">
+        <attribute name="gameId" optional="YES" attributeType="String"/>
+        <attribute name="identifier" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="tagsRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TagMO"/>
+    </entity>
+    <entity name="GameMO" representedClassName=".GameMO" syncable="YES">
+        <attribute name="gamerTag" optional="YES" attributeType="String"/>
+        <attribute name="gameSelectionImageURL" optional="YES" attributeType="URI"/>
+        <attribute name="headerColor" optional="YES" attributeType="String"/>
+        <attribute name="iconImageURL" optional="YES" attributeType="URI"/>
+        <attribute name="identifier" attributeType="String"/>
+        <attribute name="isCrossPlatform" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="tagThemeImageURL" optional="YES" attributeType="URI"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="genresRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GenreMO"/>
+    </entity>
+    <entity name="GenreMO" representedClassName=".GenreMO" syncable="YES">
+        <attribute name="identifier" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <entity name="TagBookmarkMO" representedClassName=".TagBookmarkMO" syncable="YES">
+        <attribute name="gameId" attributeType="String"/>
+        <attribute name="tagId" attributeType="String"/>
+    </entity>
+    <entity name="TagMO" representedClassName=".TagMO" syncable="YES">
+        <attribute name="gameId" optional="YES" attributeType="String"/>
+        <attribute name="identifier" attributeType="String"/>
+        <attribute name="isFollowed" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rawType" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="nestedTagsRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TagMO"/>
+    </entity>
+    <entity name="UserMO" representedClassName=".UserMO" syncable="YES">
+        <attribute name="about" optional="YES" attributeType="String"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="highlightLink" optional="YES" attributeType="URI"/>
+        <attribute name="highlightVideoURL" optional="YES" attributeType="URI"/>
+        <attribute name="identifier" attributeType="String"/>
+        <attribute name="ign" attributeType="String"/>
+        <attribute name="ignCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isSavedProfile" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isSignedInUser" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="lastOnline" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="profileBackgroundImageURL" optional="YES" attributeType="URI"/>
+        <attribute name="profileImageColoredBackgroundURL" optional="YES" attributeType="URI"/>
+        <attribute name="profileImageURL" optional="YES" attributeType="URI"/>
+        <attribute name="tagline" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="friendsRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="UserMO"/>
+        <relationship name="userRelationshipStatus" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UserRelationshipStatus" inverseName="user" inverseEntity="UserRelationshipStatus"/>
+    </entity>
+    <entity name="UserRelationshipStatus" representedClassName=".UserRelationshipStatus" syncable="YES">
+        <attribute name="creator" attributeType="String"/>
+        <attribute name="rawStatus" attributeType="String"/>
+        <attribute name="receiver" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="UserMO" inverseName="userRelationshipStatus" inverseEntity="UserMO"/>
+    </entity>
+    <elements>
+        <element name="FollowedTagsMO" positionX="-45" positionY="126" width="128" height="105"/>
+        <element name="GameMO" positionX="-63" positionY="9" width="128" height="210"/>
+        <element name="GenreMO" positionX="-54" positionY="126" width="128" height="75"/>
+        <element name="TagBookmarkMO" positionX="-45" positionY="126" width="128" height="75"/>
+        <element name="TagMO" positionX="-54" positionY="117" width="128" height="178"/>
+        <element name="UserMO" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="UserRelationshipStatus" positionX="-54" positionY="117" width="128" height="28"/>
+    </elements>
+</model>
